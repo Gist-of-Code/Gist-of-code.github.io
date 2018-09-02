@@ -160,3 +160,9 @@ B.readyState&&!B.createEventObject||"complete"==B.readyState)hd();else{Ra(B,"DOM
 if(!sd)break a;vd();yd=void 0;zd={};wd={};Bd=void 0;Ad={};xd="";Cd=td();A.setInterval(vd,864E5);}}};dh.Od();
 
 })()
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-124074835-2');
