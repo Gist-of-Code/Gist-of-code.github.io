@@ -16,4 +16,7 @@ app.get('/CodeTutorials',function(req,res){
 app.get('/styling/main.css',function(req,res){
   res.sendFile(path.join(__dirname+'/public/styling/main.css'))
 });
+app.get('/javascript/gtag.js',function(req,res){
+  res.sendFile(path.join(__dirname+'/scripts/javascript/gtag.js'))
+})
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
