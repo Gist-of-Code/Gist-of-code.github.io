@@ -19,7 +19,7 @@ app.get('/styling/main.css',function(req,res){
 app.get('/javascript/gtag.js',function(req,res){
   res.sendFile(path.join(__dirname+'/scripts/javascript/gtag.js'))
 })
-app.get('/analytics.js',function(req,res){
-  res.sendFile(path.join(__dirname+'/scripts/javascript/autotrack'))
+app.get('/analytics',function(req,res){
+  res.sendFile(path.join(__dirname+'/scripts/javascript/autotrack.js'))
 });
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
