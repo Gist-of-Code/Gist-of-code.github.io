@@ -20,6 +20,6 @@ app.get('/javascript/gtag.js',function(req,res){
   res.sendFile(path.join(__dirname+'/scripts/javascript/gtag.js'))
 })
 app.get('/analytics.js',function(req,res){
-  res.sendFile(path.join(__dirname+'/scripts/javascript/autotrack.js'))
+  res.sendFile(path.join(__dirname+'/scripts/javascript/autotrack'))
 });
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
