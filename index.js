@@ -16,8 +16,8 @@ app.get('/CodeTutorials',function(req,res){
 app.get('/styling/main.css',function(req,res){
   res.sendFile(path.join(__dirname+'/public/styling/main.css'))
 });
-app.get('/javascript/gtag.js',function(req,res){
-  res.sendFile(path.join(__dirname+'/scripts/javascript/gtag.js'))
+app.get('/libraries/g-analytics.js',function(req,res){
+  res.sendFile(path.join(__dirname+'/libraries/g-analytics.js'))
 })
 app.get('/analytics.js',function(req,res){
   res.sendFile(path.join(__dirname+'/scripts/javascript/analytics.js'))
