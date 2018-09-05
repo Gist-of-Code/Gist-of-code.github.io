@@ -22,4 +22,7 @@ app.get('/libraries/g-analytics.js',function(req,res){
 app.get('/analytics.js',function(req,res){
   res.sendFile(path.join(__dirname+'/scripts/javascript/analytics.js'))
 });
+app.get('/logo.png',function(req,res){
+  res.sendFile(path.join(__dirname+'/public/images/logo.png'))
+});
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
